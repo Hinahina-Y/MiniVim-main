@@ -128,8 +128,8 @@ namespace sjtu
 
     void Buffer::SaveAs(const std::filesystem::path &path)
     {
-        path_ = path;
         WriteTo(path);
+        path_ = path;
     }
 
     void Buffer::WriteTo(const std::filesystem::path &path) const
