@@ -150,7 +150,7 @@ namespace sjtu
 
         for (const auto &line : lines_)
         {
-            out << line << '\r\n';
+            out << line << '\n';
         }
 
         if (!out)
