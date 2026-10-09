@@ -147,7 +147,10 @@ namespace sjtu
             throw std::runtime_error("Error:Failed to open file.");
             return;
         }
-
+        if(path_.empty()&&lines_.size()==1&&lines_[0]=="")
+        {
+            return;
+        }
         for (const auto &line : lines_)
         {
             out << line << '\n';
