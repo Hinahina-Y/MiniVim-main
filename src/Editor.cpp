@@ -285,6 +285,7 @@ namespace sjtu
         else
         {
             message_="Error:Wrong Command!";
+            LeaveCommandLine();
             return;
         }
         LeaveCommandLine();
